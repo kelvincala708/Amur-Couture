@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/navigation/Navigation'
 import Footer from '@/components/Footer'
@@ -8,6 +8,7 @@ import { CartProvider } from '@/contexts/CartContext'
 import { TranslationProvider } from '@/i18n/index'
 
 const inter = Inter({ subsets: ['latin'] })
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
 
 export const metadata: Metadata = {
   title: 'Amur Couture | Luxury Bridal Fashion',
@@ -26,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} ${playfair.variable}`}>
         <TranslationProvider>
           <AuthProvider>
             <CartProvider>

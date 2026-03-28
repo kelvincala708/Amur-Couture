@@ -1,8 +1,5 @@
 'use client'
 
-import Image from 'next/image'
-import Link from 'next/link'
-
 interface NavbarLogoProps {
   className?: string
   width?: number
@@ -10,24 +7,22 @@ interface NavbarLogoProps {
   alt?: string
 }
 
-const NavbarLogo: React.FC<NavbarLogoProps> = ({ 
-  className = '', 
-  width = 160, 
-  height = 40,
-  alt = "Amur Couture"
-}) => {
+const NavbarLogo: React.FC<NavbarLogoProps> = ({ className = '' }) => {
   return (
-    <Link href="/" className={`block ${className}`} aria-label="Amur Couture">
-      <Image
-        src="/amurlogo.png"
-        alt={alt}
-        width={width}
-        height={height}
-        className="h-[140px] w-auto object-contain"
-        priority
-        unoptimized
-      />
-    </Link>
+    <div className={`flex flex-col items-center leading-none select-none ${className}`}>
+      <span
+        className="text-2xl md:text-3xl font-serif tracking-[0.25em] text-gray-900 uppercase"
+        style={{ fontFamily: "'Playfair Display', Georgia, serif", letterSpacing: '0.25em' }}
+      >
+        Amur
+      </span>
+      <span
+        className="text-xs md:text-sm font-serif tracking-[0.5em] text-gray-700 uppercase mt-0.5"
+        style={{ fontFamily: "'Playfair Display', Georgia, serif", letterSpacing: '0.5em' }}
+      >
+        Couture
+      </span>
+    </div>
   )
 }
 
