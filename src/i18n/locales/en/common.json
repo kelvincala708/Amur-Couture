@@ -1,0 +1,98 @@
+{
+  "navigation": {
+    "home": "Home",
+    "bridal": "Bridal",
+    "rent": "Rent",
+    "sale": "Sale",
+    "customDresses": "Custom Dresses",
+    "about": "About",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "language": "Language",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "myAccount": "My Account",
+    "cart": "Cart"
+  },
+  "hero": {
+    "title": "Amur Couture",
+    "bridalCollection": "Bridal Collection",
+    "exploreBridal": "Explore Bridal",
+    "bookAppointment": "Book Appointment"
+  },
+    "footer": {
+    "brandDescription": "Luxury bridal fashion in the heart of Tirana, Albania. Creating unforgettable moments since 2015.",
+    "collections": {
+      "bridalDresses": "Bridal Dresses",
+      "eveningDresses": "Evening Dresses",
+      "rentDress": "Rent a Dress",
+      "sale": "Sale",
+      "customDresses": "Custom Dresses"
+    },
+    "services": {
+      "aboutUs": "About Us",
+      "contact": "Contact",
+      "faq": "FAQ",
+      "bookAppointment": "Book Appointment",
+      "customConsultation": "Custom Consultation"
+    },
+    "contact": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "addressLabel": "Tirana, Albania",
+      "phoneLabel": "+355 69 976 9882",
+      "emailLabel": "amurcouture@gmail.com",
+      "openingHours": "Opening Hours",
+      "openingHoursText": "Mon - Sat: 10:00 - 19:00",
+      "sundayClosed": "Sunday: Closed"
+    },
+    "copyright": "© 2024 Amur Couture. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "We'd love to hear from you. Whether you have questions about our collections, want to book an appointment, or are interested in our custom services, our team is here to help.",
+    "form": {
+      "title": "Send us a Message",
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Your Message",
+      "sendMessage": "Send Message"
+    },
+    "visitShowroom": "Visit Our Showroom",
+    "address": {
+      "title": "Address",
+      "address": "Amur Couture Showroom\nRruga e Kavajes, Garden Building\nTirana, Albania"
+    },
+    "contactInfo": {
+      "title": "Contact Information",
+      "phone": "Phone: +355 69 976 9882",
+      "email": "Email: amurcouture@gmail.com",
+      "instagram": "Instagram: @amur.couture"
+      
+    },
+    "openingHours": {
+      "title": "Opening Hours",
+      "mondaySaturday": "Monday - Saturday: 10:00 - 19:00",
+      "sunday": "Sunday: Closed",
+      "appointmentNote": "Appointments recommended for the best experience"
+    },
+    "bookAppointment": "Book Appointment",
+    "findUs": "Find Us",
+    "findUsDescription": "Conveniently located in the heart of Tirana"
+  },
+  "common": {
+    "loading": "Loading...",
+    "explore": "Explore",
+    "book": "Book",
+    "contact": "Contact",
+    "about": "About",
+    "collections": "Collections",
+    "services": "Services",
+    "home": "Home"
+  }
+}

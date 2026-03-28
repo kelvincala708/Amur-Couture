@@ -1,0 +1,98 @@
+{
+  "navigation": {
+    "home": "Kreu",
+    "bridal": "Nuse",
+    "rent": "Qira",
+    "sale": "Zbritje",
+    "customDresses": "Veshje të Personalizuara",
+    "about": "Rreth Nesh",
+    "contact": "Kontakt",
+    "faq": "FAQ",
+    "language": "Gjuha",
+    "signIn": "Hyni",
+    "signUp": "Regjistrohuni",
+    "signOut": "Dilni",
+    "myAccount": "Llogaria Ime",
+    "cart": "Shporta"
+  },
+  "hero": {
+    "title": "Amur Couture",
+    "bridalCollection": "Koleksioni i Nuseve",
+    "exploreBridal": "Shfleto Koleksionin e Nuseve",
+    "bookAppointment": "Rezervo Termin"
+  },
+  "footer": {
+    "brandDescription": "Moda luksuzuese e nuseve në zemër të Tiranës, Shqipëri. Krijimi i momenteve të paharrueshme që nga viti 2015.",
+    "collections": {
+      "bridalDresses": "Veshje Nuse",
+      "eveningDresses": "Veshje Erese",
+      "rentDress": "Merr Veshje me Qira",
+      "sale": "Zbritje",
+      "customDresses": "Veshje të Personalizuara"
+    },
+    "services": {
+      "aboutUs": "Rreth Nesh",
+      "contact": "Kontakt",
+      "faq": "FAQ",
+      "bookAppointment": "Rezërvo Termin",
+      "customConsultation": "Konsultim i Personalizuar"
+    },
+    "contact": {
+      "address": "Adresa",
+      "phone": "Telefoni",
+      "email": "Email",
+      "addressLabel": "Rruga e Kavajes, Garden Building, Tirana",
+      "phoneLabel": "+355 69 976 9882",
+      "emailLabel": "amurcouture@gmail.com",
+      "openingHours": "Orari i Punës",
+      "openingHoursText": "Hën-Mërk: 10:00 - 19:00",
+      "sundayClosed": "E Diel: Mbyllur"
+    },
+    "copyright": "© 2024 Amur Couture. Të gjitha të drejtat e rezervuara.",
+    "privacyPolicy": "Politika e Privatësisë",
+    "termsOfService": "Kushtet e Shërbimit",
+    "shippingReturns": "Dërgesa & Kthimet"
+  },
+  "contact": {
+    "title": "Na Kontaktoni",
+    "description": "Do të donim të dëgjonim nga ju. Nëse keni pyetje rreth koleksioneve tona, doni të rezervoni një termin, ose jeni të interesuar për shërbimet tona të personalizuara, ekipi ynë është këtu për t'ju ndihmuar.",
+    "form": {
+      "title": "Na Dërgoni një Mesazh",
+      "name": "Emri Juaj",
+      "email": "Email-i Juaj",
+      "subject": "Subjekti",
+      "message": "Mesazhi Juaj",
+      "sendMessage": "Dërgo Mesazhin"
+    },
+    "visitShowroom": "Vizitoni Showroom-in tonë",
+    "address": {
+      "title": "Adresa",
+      "address": "Showroom Amur Couture\nRruga e Kavajes, Garden Building\nTiranë, Shqipëri"
+    },
+    "contactInfo": {
+      "title": "Informacioni i Kontaktit",
+      "phone": "Telefoni: +355 69 976 9882",
+      "email": "Email: amurcouture@gmail.com",
+      "instagram": "Instagram: @amur.couture"
+    },
+    "openingHours": {
+      "title": "Orari i Punës",
+      "mondaySaturday": "E Hënë - E Mërkurë: 10:00 - 19:00",
+      "sunday": "E Diel: Mbyllur",
+      "appointmentNote": "Rekomandohen terminet për një eksperiencë më të mirë"
+    },
+    "bookAppointment": "Rezërvo Termin",
+    "findUs": "Na Gjeni",
+    "findUsDescription": "I vendosur në mënyrë të përshtatshme në zemër të Tiranës"
+  },
+  "common": {
+    "loading": "Duke ngarkuar...",
+    "explore": "Shfleto",
+    "book": "Rezërvo",
+    "contact": "Kontakt",
+    "about": "Rreth",
+    "collections": "Koleksionet",
+    "services": "Shërbimet",
+    "home": "Kreu"
+  }
+}

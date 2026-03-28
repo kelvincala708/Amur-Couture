@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+/* CSS Variables for Amur Couture Colors */
+:root {
+  --amur-black: #111111;
+  --amur-gray: #A79F96;
+  --amur-ivory: #F7F4EF;
+  --amur-champagne: #E7DDCF;
+  --amur-beige: #D8CABB;
+  --amur-white: #FFFFFF;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: var(--amur-black);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background-color: var(--amur-black);
+    color: var(--amur-white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--amur-gray);
+    color: var(--amur-black);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .btn-secondary {
+    border: 2px solid var(--amur-black);
+    color: var(--amur-black);
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--amur-black);
+    color: var(--amur-white);
+    transform: translateY(-2px);
+  }
+  
+  .section-title {
+    font-size: 2.25rem;
+    line-height: 1.1;
+    font-family: Playfair Display, Georgia, serif;
+    color: var(--amur-black);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .section-subtitle {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--amur-gray);
+    margin-bottom: 3rem;
+    text-align: center;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@layer utilities {
+  .text-serif {
+    font-family: Playfair Display, Georgia, serif;
+  }
+  
+  .glass-effect {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+  }
+}

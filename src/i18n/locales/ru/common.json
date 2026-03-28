@@ -1,0 +1,98 @@
+{
+  "navigation": {
+    "home": "Главная",
+    "bridal": "Свадебное",
+    "rent": "Аренда",
+    "sale": "Распродажа",
+    "customDresses": "Индивидуальные платья",
+    "about": "О нас",
+    "contact": "Контакты",
+    "faq": "FAQ",
+    "language": "Язык",
+    "signIn": "Войти",
+    "signUp": "Регистрация",
+    "signOut": "Выйти",
+    "myAccount": "Мой аккаунт",
+    "cart": "Корзина"
+  },
+  "hero": {
+    "title": "Amur Couture",
+    "bridalCollection": "Свадебная коллекция",
+    "exploreBridal": "Исследовать свадебную коллекцию",
+    "bookAppointment": "Забронировать встречу"
+  },
+  "footer": {
+    "brandDescription": "Роскошная свадебная мода в самом сердце Тираны, Албания. Создаем незабываемые моменты с 2015 года.",
+    "collections": {
+      "bridalDresses": "Свадебные платья",
+      "eveningDresses": "Вечерние платья",
+      "rentDress": "Арендовать платье",
+      "sale": "Распродажа",
+      "customDresses": "Индивидуальные платья"
+    },
+    "services": {
+      "aboutUs": "О нас",
+      "contact": "Контакты",
+      "faq": "FAQ",
+      "bookAppointment": "Забронировать встречу",
+      "customConsultation": "Индивидуальная консультация"
+    },
+    "contact": {
+      "address": "Адрес",
+      "phone": "Телефон",
+      "email": "Электронная почта",
+      "addressLabel": "Rruga e Kavajes, Garden Building, Tirana",
+      "phoneLabel": "+355 69 976 9882",
+      "emailLabel": "amurcouture@gmail.com",
+      "openingHours": "Часы работы",
+      "openingHoursText": "Пн - Сб: 10:00 - 19:00",
+      "sundayClosed": "Воскресенье: Закрыто"
+    },
+    "copyright": "© 2024 Amur Couture. Все права защищены.",
+    "privacyPolicy": "Политика конфиденциальности",
+    "termsOfService": "Условия использования",
+    "shippingReturns": "Доставка и возврат"
+  },
+  "contact": {
+    "title": "Свяжитесь с нами",
+    "description": "Мы будем рады услышать от вас. Будь то вопросы о наших коллекциях, желание забронировать встречу или интерес к нашим индивидуальным услугам, наша команда всегда готова помочь.",
+    "form": {
+      "title": "Отправьте нам сообщение",
+      "name": "Ваше имя",
+      "email": "Ваш email",
+      "subject": "Тема",
+      "message": "Ваше сообщение",
+      "sendMessage": "Отправить сообщение"
+    },
+    "visitShowroom": "Посетите наш шоурум",
+    "address": {
+      "title": "Адрес",
+      "address": "Amur Couture Showroom\nRruga e Kavajes, Garden Building\nТирана, Албания"
+    },
+    "contactInfo": {
+      "title": "Контактная информация",
+      "phone": "Телефон: +355 69 976 9882",
+      "email": "Email: amurcouture@gmail.com",
+      "instagram": "Instagram: @amur.couture"
+    },
+    "openingHours": {
+      "title": "Часы работы",
+      "mondaySaturday": "Понедельник - Суббота: 10:00 - 19:00",
+      "sunday": "Воскресенье: Закрыто",
+      "appointmentNote": "Рекомендуется запись на встречу для наилучшего опыта"
+    },
+    "bookAppointment": "Забронировать встречу",
+    "findUs": "Найдите нас",
+    "findUsDescription": "Удобно расположено в самом сердце Тираны"
+  },
+  "common": {
+    "loading": "Загрузка...",
+    "explore": "Исследовать",
+    "book": "Забронировать",
+    "contact": "Контакт",
+    "about": "О",
+    "collections": "Коллекции",
+    "services": "Услуги",
+    "home": "Главная"
+  }
+}
