@@ -14,9 +14,9 @@ export const metadata: Metadata = {
   title: 'Amur Couture | Luxury Bridal Fashion',
   description: 'Luxury bridal dresses available for rent and sale in Tirana, Albania',
   icons: {
-    icon: '/logo.svg',
-    shortcut: '/logo.svg',
-    apple: '/logo.svg',
+    icon: '/new_amur_logo.png',
+    shortcut: '/new_amur_logo.png',
+    apple: '/new_amur_logo.png',
   },
 }
 
