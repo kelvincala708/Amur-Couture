@@ -19,7 +19,7 @@ const Logo: React.FC<LogoProps> = ({
   return (
     <Link href="/" className={`block ${className}`} aria-label="Amur Couture">
       <Image
-        src="/new_amur_logo.png"
+        src="/black_and_white.png"
         alt={alt}
         width={width}
         height={height}

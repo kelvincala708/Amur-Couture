@@ -64,8 +64,12 @@ const ComingSoon: React.FC = () => {
               amur
             </span>
             <span
-              className="text-xl md:text-2xl text-[var(--amur-black)] tracking-[0.4em] uppercase"
-              style={{ fontFamily: "'Tschichold', 'TschicholdArchiType Normal', Arial, sans-serif" }}
+              className="text-sm md:text-base text-[var(--amur-black)] tracking-[0.4em] uppercase"
+              style={{
+                fontFamily: "'Tschichold', 'TschicholdArchiType Normal', Arial, sans-serif",
+                fontFeatureSettings: "'calt' 0, 'salt' 0, 'liga' 0, 'ss01' 0",
+                fontVariant: 'normal',
+              }}
             >
               couture
             </span>

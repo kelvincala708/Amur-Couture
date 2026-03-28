@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Search, Heart, ChevronDown } from 'lucide-react'
+import { Menu, Search, Heart, ChevronDown } from 'lucide-react'
 import NavbarLogo from '@/components/ui/NavbarLogo'
 import Link from 'next/link'
 import { useTranslation } from '@/i18n/index'
@@ -15,19 +15,7 @@ const LANGUAGES: { code: Language; label: string }[] = [
   { code: 'ru', label: 'RU' },
 ]
 
-const NAV_LINKS = [
-  { href: '/', label: 'Home' },
-  { href: '/bridal', label: 'Bridal' },
-  { href: '/rent', label: 'Rent' },
-  { href: '/sale', label: 'Sale' },
-  { href: '/custom-dresses', label: 'Custom Dresses' },
-  { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
-  { href: '/faq', label: 'FAQ' },
-]
-
 const Navigation: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
@@ -160,44 +148,18 @@ const Navigation: React.FC = () => {
               <Heart size={20} />
             </button>
 
-            {/* Hamburger */}
+            {/* Hamburger — decorative only */}
             <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-900 hover:opacity-70 transition-opacity"
-              aria-label="Toggle menu"
+              className="text-gray-900 cursor-default pointer-events-none opacity-70"
+              aria-label="Menu"
+              disabled
             >
-              {isOpen ? <X size={22} /> : <Menu size={22} />}
+              <Menu size={22} />
             </button>
           </div>
         </div>
       </div>
 
-      {/* ── Mobile / Full Menu Drawer ── */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
-            className="border-t border-gray-100 bg-white/95 backdrop-blur-md"
-          >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 space-y-1">
-              {NAV_LINKS.map(link => (
-                <motion.div key={link.href} whileHover={{ x: 6 }}>
-                  <Link
-                    href={link.href}
-                    className="block text-gray-900 hover:text-gray-600 transition-colors duration-200 text-base font-medium py-2 tracking-wide"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {link.label}
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </nav>
   )
 }
