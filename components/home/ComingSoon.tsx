@@ -39,7 +39,7 @@ const ComingSoon: React.FC = () => {
           className="mb-8 flex justify-center"
         >
           <Image
-            src="/logo_without_background.png"
+            src="/amurlogo.png"
             alt="Amur Couture"
             width={200}
             height={100}

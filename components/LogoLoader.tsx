@@ -15,7 +15,7 @@ const LogoLoader: React.FC<LogoLoaderProps> = ({ onLoadingComplete }) => {
     const timer = setTimeout(() => {
       setIsVisible(false)
       setTimeout(onLoadingComplete, 500) // Wait for fade out animation
-    }, 3000) // Show logo for 3 seconds
+    }, 1000) // Show logo for 1 second
 
     return () => clearTimeout(timer)
   }, [onLoadingComplete])
@@ -42,7 +42,7 @@ const LogoLoader: React.FC<LogoLoaderProps> = ({ onLoadingComplete }) => {
             className="flex flex-col items-center"
           >
             <Image
-              src="/logo_without_background.png"
+              src="/amurlogo.png"
               alt="Amur Couture"
               width={220}
               height={120}

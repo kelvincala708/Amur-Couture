@@ -19,7 +19,7 @@ const NavbarLogo: React.FC<NavbarLogoProps> = ({
   return (
     <Link href="/" className={`block ${className}`} aria-label="Amur Couture">
       <Image
-        src="/logo_without_background.png"
+        src="/amurlogo.png"
         alt={alt}
         width={width}
         height={height}
