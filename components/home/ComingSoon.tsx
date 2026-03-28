@@ -43,7 +43,7 @@ const ComingSoon: React.FC = () => {
             alt="Amur Couture"
             width={200}
             height={100}
-            className="w-auto h-auto object-contain"
+            className="h-20 w-auto object-contain"
             priority
             unoptimized
           />
