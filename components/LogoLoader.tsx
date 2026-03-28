@@ -43,7 +43,7 @@ const LogoLoader: React.FC<LogoLoaderProps> = ({ onLoadingComplete }) => {
             className="flex flex-col items-center"
           >
             <Image
-              src="/amurlogo.png"
+              src="/new_amur_logo.png"
               alt="Amur Couture"
               width={220}
               height={120}

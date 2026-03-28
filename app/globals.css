@@ -1,5 +1,22 @@
 @import "tailwindcss";
 
+/* Custom Fonts */
+@font-face {
+  font-family: 'Higuen Serif';
+  src: url('/fonts/Higuen Serif.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tschichold';
+  src: url('/fonts/TschicholdArchiType Normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* CSS Variables for Amur Couture Colors */
 :root {
   --amur-black: #111111;

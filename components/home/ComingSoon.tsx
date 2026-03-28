@@ -39,7 +39,7 @@ const ComingSoon: React.FC = () => {
           className="mb-8 flex justify-center"
         >
           <Image
-            src="/amurlogo.png"
+            src="/new_amur_logo.png"
             alt="Amur Couture"
             width={200}
             height={100}
@@ -56,9 +56,20 @@ const ComingSoon: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mb-10"
         >
-          <h2 className="text-3xl md:text-4xl font-serif text-[var(--amur-black)] mb-3 tracking-wide">
-            Coming Soon!
-          </h2>
+          <div className="mb-4 flex flex-col items-center gap-1">
+            <span
+              className="text-6xl md:text-8xl text-[var(--amur-black)] leading-none"
+              style={{ fontFamily: "'Higuen Serif', Georgia, serif" }}
+            >
+              amur
+            </span>
+            <span
+              className="text-xl md:text-2xl text-[var(--amur-black)] tracking-[0.4em] uppercase"
+              style={{ fontFamily: "'Tschichold', 'TschicholdArchiType Normal', Arial, sans-serif" }}
+            >
+              couture
+            </span>
+          </div>
           <p className="text-xl md:text-2xl font-serif text-[var(--amur-black)] mb-2 italic">
             Where Love Meets Couture.
           </p>
