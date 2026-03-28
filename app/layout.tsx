@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import { AuthProvider } from '@/contexts/AuthContext'
 import { CartProvider } from '@/contexts/CartContext'
 import { TranslationProvider } from '@/i18n/index'
+import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({ subsets: ['latin'] })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
@@ -37,6 +38,7 @@ export default function RootLayout({
                   {children}
                 </main>
                 <Footer />
+                <Analytics />
               </div>
             </CartProvider>
           </AuthProvider>
