@@ -47,7 +47,7 @@ const LogoLoader: React.FC<LogoLoaderProps> = ({ onLoadingComplete }) => {
               alt="Amur Couture"
               width={220}
               height={120}
-              className="h-24 w-auto object-contain"
+              className="h-36 w-auto object-contain"
               priority
               unoptimized
             />
