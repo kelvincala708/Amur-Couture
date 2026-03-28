@@ -23,7 +23,7 @@ const Logo: React.FC<LogoProps> = ({
         alt={alt}
         width={width}
         height={height}
-        className="h-14 w-auto object-contain"
+        className="h-[300px] w-auto object-contain"
         priority
         unoptimized
       />

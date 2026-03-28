@@ -64,7 +64,7 @@ const Navigation: React.FC = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 relative">
+        <div className="flex items-center justify-between h-[160px] relative">
 
           {/* ── LEFT: Language Switcher ── */}
           <div className="flex items-center" ref={langRef}>
