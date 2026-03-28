@@ -1,7 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Instagram, Facebook, Twitter } from 'lucide-react'
+import { Mail, Instagram, Facebook } from 'lucide-react'
+import Image from 'next/image'
 import { useState } from 'react'
 
 const ComingSoon: React.FC = () => {
@@ -35,37 +36,36 @@ const ComingSoon: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-8"
+          className="mb-8 flex justify-center"
         >
-          <div className="w-24 h-24 mx-auto mb-6 bg-[var(--amur-black)] rounded-full flex items-center justify-center">
-            <div className="w-16 h-16 bg-[var(--amur-white)] rounded-full flex items-center justify-center">
-              <span className="text-[var(--amur-black)] text-2xl font-serif">A</span>
-            </div>
-          </div>
+          <Image
+            src="/logo_without_background.png"
+            alt="Amur Couture"
+            width={200}
+            height={100}
+            className="w-auto h-auto object-contain"
+            priority
+          />
         </motion.div>
-
-        {/* Brand Name */}
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="text-6xl md:text-8xl font-serif text-[var(--amur-black)] mb-6 tracking-tight"
-        >
-          Amur Couture
-        </motion.h1>
 
         {/* Coming Soon Text */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mb-8"
+          className="mb-10"
         >
-          <h2 className="text-2xl md:text-3xl font-light text-[var(--amur-gray)] mb-2">
-            Coming Soon
+          <h2 className="text-3xl md:text-4xl font-serif text-[var(--amur-black)] mb-3 tracking-wide">
+            Coming Soon!
           </h2>
-          <p className="text-lg text-[var(--amur-gray)] font-light leading-relaxed">
-            Luxury bridal fashion awaits. Our exclusive collection will be available soon.
+          <p className="text-xl md:text-2xl font-serif text-[var(--amur-black)] mb-2 italic">
+            Where Love Meets Couture.
+          </p>
+          <p className="text-base md:text-lg font-serif text-[var(--amur-gray)] mb-2">
+            Our Exclusive Collection Will Be Available Soon.
+          </p>
+          <p className="text-base md:text-lg font-serif text-[var(--amur-gray)] tracking-widest uppercase">
+            Stay Tuned
           </p>
         </motion.div>
 
@@ -127,31 +127,14 @@ const ComingSoon: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex justify-center space-x-6 pt-4"
           >
-            <a href="#" className="text-[var(--amur-gray)] hover:text-[var(--amur-black)] transition-colors">
+            <a href="https://www.instagram.com/amur.couture" target="_blank" rel="noopener noreferrer" className="text-[var(--amur-gray)] hover:text-[var(--amur-black)] transition-colors">
               <Instagram size={24} />
             </a>
-            <a href="#" className="text-[var(--amur-gray)] hover:text-[var(--amur-black)] transition-colors">
+            <a href="https://www.facebook.com/share/18nt8hpjhr/?mibextid=wwXLfr" target="_blank" rel="noopener noreferrer" className="text-[var(--amur-gray)] hover:text-[var(--amur-black)] transition-colors">
               <Facebook size={24} />
-            </a>
-            <a href="#" className="text-[var(--amur-gray)] hover:text-[var(--amur-black)] transition-colors">
-              <Twitter size={24} />
             </a>
           </motion.div>
         </motion.div>
-
-        {/* Subtle decorative elements */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.8 }}
-          className="absolute top-1/4 left-0 w-2 h-2 bg-[var(--amur-champagne)] rounded-full opacity-30"
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.9 }}
-          className="absolute bottom-1/4 right-0 w-1 h-1 bg-[var(--amur-beige)] rounded-full opacity-30"
-        ></motion.div>
       </div>
     </section>
   )

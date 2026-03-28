@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { MapPin, Phone, Mail, Instagram, Facebook, Twitter } from 'lucide-react'
+import { MapPin, Phone, Mail, Instagram, Facebook } from 'lucide-react'
 import Logo from '@/components/ui/Logo'
 import { useTranslation } from '@/i18n/index'
 
@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           
-          {/* Brand */}
+          {/* Brand — clickable & readable */}
           <div className="lg:col-span-1">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
               <a href="https://www.instagram.com/amur.couture" className="text-[var(--amur-champagne)] hover:text-[var(--amur-white)] transition-colors" target="_blank" rel="noopener noreferrer">
                 <Instagram size={24} />
               </a>
-              <a href="https://www.facebook.com/AmurCouture" className="text-[var(--amur-champagne)] hover:text-[var(--amur-white)] transition-colors" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/share/18nt8hpjhr/?mibextid=wwXLfr" className="text-[var(--amur-champagne)] hover:text-[var(--amur-white)] transition-colors" target="_blank" rel="noopener noreferrer">
                 <Facebook size={24} />
               </a>
               <a href="https://maps.app.goo.gl/9sBKzBm2kkFYpD2KA?g_st=ic" className="text-[var(--amur-champagne)] hover:text-[var(--amur-white)] transition-colors" target="_blank" rel="noopener noreferrer">
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
             </motion.div>
           </div>
 
-          {/* Collections */}
+          {/* Collections — read-only */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -61,14 +61,14 @@ const Footer: React.FC = () => {
           >
             <h4 className="text-lg font-serif mb-6">{t.footer.collections.bridalDresses}</h4>
             <ul className="space-y-3">
-              <li><a href="/bridal" className="text-[var(--amur-champagne)] hover:text-[var(--amur-white)] transition-colors">{t.footer.collections.bridalDresses}</a></li>
-              <li><a href="/rent" className="text-[var(--amur-champagne)] hover:text-[var(--amur-white)] transition-colors">{t.footer.collections.rentDress}</a></li>
-              <li><a href="/sale" className="text-[var(--amur-champagne)] hover:text-[var(--amur-white)] transition-colors">{t.footer.collections.sale}</a></li>
-              <li><a href="/custom" className="text-[var(--amur-champagne)] hover:text-[var(--amur-white)] transition-colors">{t.footer.collections.customDresses}</a></li>
+              <li><span className="text-[var(--amur-champagne)] text-sm">{t.footer.collections.bridalDresses}</span></li>
+              <li><span className="text-[var(--amur-champagne)] text-sm">{t.footer.collections.rentDress}</span></li>
+              <li><span className="text-[var(--amur-champagne)] text-sm">{t.footer.collections.sale}</span></li>
+              <li><span className="text-[var(--amur-champagne)] text-sm">{t.footer.collections.customDresses}</span></li>
             </ul>
           </motion.div>
 
-          {/* Services */}
+          {/* Services — read-only */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -77,15 +77,15 @@ const Footer: React.FC = () => {
           >
             <h4 className="text-lg font-serif mb-6">{t.footer.services.aboutUs}</h4>
             <ul className="space-y-3">
-              <li><a href="/about" className="text-[var(--amur-champagne)] hover:text-[var(--amur-white)] transition-colors">{t.footer.services.aboutUs}</a></li>
-              <li><a href="/contact" className="text-[var(--amur-champagne)] hover:text-[var(--amur-white)] transition-colors">{t.footer.services.contact}</a></li>
-              <li><a href="/faq" className="text-[var(--amur-champagne)] hover:text-[var(--amur-white)] transition-colors">{t.footer.services.faq}</a></li>
-              <li><a href="#" className="text-[var(--amur-champagne)] hover:text-[var(--amur-white)] transition-colors">{t.footer.services.bookAppointment}</a></li>
-              <li><a href="#" className="text-[var(--amur-champagne)] hover:text-[var(--amur-white)] transition-colors">{t.footer.services.customConsultation}</a></li>
+              <li><span className="text-[var(--amur-champagne)] text-sm">{t.footer.services.aboutUs}</span></li>
+              <li><span className="text-[var(--amur-champagne)] text-sm">{t.footer.services.contact}</span></li>
+              <li><span className="text-[var(--amur-champagne)] text-sm">{t.footer.services.faq}</span></li>
+              <li><span className="text-[var(--amur-champagne)] text-sm">{t.footer.services.bookAppointment}</span></li>
+              <li><span className="text-[var(--amur-champagne)] text-sm">{t.footer.services.customConsultation}</span></li>
             </ul>
           </motion.div>
 
-          {/* Contact */}
+          {/* Contact — read-only */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -133,21 +133,19 @@ const Footer: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="border-t border-[rgba(var(--amur-gray),0.30)] mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
+          className="border-t border-[rgba(167,159,150,0.30)] mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
         >
           <p className="text-[var(--amur-champagne)] text-sm">
             {t.footer.copyright}
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-[var(--amur-champagne)] hover:text-[var(--amur-white)] text-sm transition-colors">{t.footer.privacyPolicy}</a>
-            <a href="#" className="text-[var(--amur-champagne)] hover:text-[var(--amur-white)] text-sm transition-colors">{t.footer.termsOfService}</a>
-            <a href="#" className="text-[var(--amur-champagne)] hover:text-[var(--amur-white)] text-sm transition-colors">{t.footer.shippingReturns}</a>
+            <span className="text-[var(--amur-champagne)] text-sm">{t.footer.privacyPolicy}</span>
+            <span className="text-[var(--amur-champagne)] text-sm">{t.footer.termsOfService}</span>
           </div>
         </motion.div>
       </div>
     </footer>
   )
 }
-
 
 export default Footer

@@ -14,8 +14,8 @@ const LogoLoader: React.FC<LogoLoaderProps> = ({ onLoadingComplete }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false)
-      setTimeout(onLoadingComplete, 300) // Wait for fade out animation
-    }, 2000) // Show logo for 2 seconds
+      setTimeout(onLoadingComplete, 500) // Wait for fade out animation
+    }, 3000) // Show logo for 3 seconds
 
     return () => clearTimeout(timer)
   }, [onLoadingComplete])
@@ -24,38 +24,31 @@ const LogoLoader: React.FC<LogoLoaderProps> = ({ onLoadingComplete }) => {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.25 }}
-          className="fixed inset-0 bg-amur-black z-50 flex items-center justify-center"
+          transition={{ duration: 0.5 }}
+          className="fixed inset-0 z-50 flex items-center justify-center"
+          style={{ backgroundColor: '#F7F4EF' }}
         >
           <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 1.2, opacity: 0 }}
+            initial={{ opacity: 0, scale: 0.85 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
             transition={{ 
-              duration: 0.25, 
-              ease: "easeOut",
-              delay: 0.1
+              duration: 0.7, 
+              ease: 'easeOut',
             }}
-            className="text-center"
+            className="flex flex-col items-center"
           >
-            {/* Logo Mark for loading animation */}
-            <div className="w-32 h-32 mx-auto mb-4 flex items-center justify-center">
-              <Image
-                src="/logo-wordmark.png"
-                alt="Amur Couture"
-                width={120}
-                height={120}
-                className="w-auto h-auto object-contain"
-                priority
-              />
-            </div>
-            <h1 className="text-3xl md:text-4xl font-serif text-amur-black">
-              Amur Couture
-            </h1>
-            <p className="text-sm text-amur-gray mt-2">Luxury Bridal Fashion</p>
+            <Image
+              src="/logo_without_background.png"
+              alt="Amur Couture"
+              width={220}
+              height={120}
+              className="w-auto h-auto object-contain"
+              priority
+            />
           </motion.div>
         </motion.div>
       )}
