@@ -1,9 +1,6 @@
-import { useTranslation } from '@/i18n/index'
 import Link from 'next/link'
 
 export default function NotFound() {
-  const { t } = useTranslation()
-
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-amur-ivory">
       <div className="text-center">
@@ -17,13 +14,13 @@ export default function NotFound() {
             href="/"
             className="px-6 py-3 bg-amur-black text-white font-medium rounded-md hover:bg-amur-gray transition-colors"
           >
-            {t.common.home}
+            Home
           </Link>
           <Link
             href="/contact"
             className="px-6 py-3 border border-amur-black text-amur-black font-medium rounded-md hover:bg-amur-black hover:text-white transition-colors"
           >
-            {t.common.contact}
+            Contact
           </Link>
         </div>
       </div>
