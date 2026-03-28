@@ -56,22 +56,12 @@ const ComingSoon: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mb-10"
         >
-          <div className="mb-4 flex flex-col items-center gap-1">
+          <div className="mb-4 flex justify-center">
             <span
               className="text-6xl md:text-8xl text-[var(--amur-black)] leading-none"
               style={{ fontFamily: "'Higuen Serif', Georgia, serif" }}
             >
               amur
-            </span>
-            <span
-              className="text-sm md:text-base text-[var(--amur-black)] tracking-[0.4em] uppercase"
-              style={{
-                fontFamily: "'Tschichold', 'TschicholdArchiType Normal', Arial, sans-serif",
-                fontFeatureSettings: "'calt' 0, 'salt' 0, 'liga' 0, 'ss01' 0",
-                fontVariant: 'normal',
-              }}
-            >
-              couture
             </span>
           </div>
           <p className="text-xl md:text-2xl font-serif text-[var(--amur-black)] mb-2 italic">
