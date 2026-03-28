@@ -45,6 +45,7 @@ const ComingSoon: React.FC = () => {
             height={100}
             className="w-auto h-auto object-contain"
             priority
+            unoptimized
           />
         </motion.div>
 

@@ -25,6 +25,7 @@ const Logo: React.FC<LogoProps> = ({
         height={height}
         className="w-auto h-auto object-contain"
         priority
+        unoptimized
       />
     </Link>
   )

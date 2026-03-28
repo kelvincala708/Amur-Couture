@@ -9,9 +9,13 @@ interface LogoLoaderProps {
 }
 
 const LogoLoader: React.FC<LogoLoaderProps> = ({ onLoadingComplete }) => {
-  const [isVisible, setIsVisible] = useState(true)
+  // Start as false to avoid hydration mismatch (useEffect runs only on client)
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
+    // Show the loader on client mount
+    setIsVisible(true)
+
     const timer = setTimeout(() => {
       setIsVisible(false)
       setTimeout(onLoadingComplete, 500) // Wait for fade out animation
@@ -35,10 +39,7 @@ const LogoLoader: React.FC<LogoLoaderProps> = ({ onLoadingComplete }) => {
             initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
-            transition={{ 
-              duration: 0.7, 
-              ease: 'easeOut',
-            }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
             className="flex flex-col items-center"
           >
             <Image
@@ -48,6 +49,7 @@ const LogoLoader: React.FC<LogoLoaderProps> = ({ onLoadingComplete }) => {
               height={120}
               className="w-auto h-auto object-contain"
               priority
+              unoptimized
             />
           </motion.div>
         </motion.div>

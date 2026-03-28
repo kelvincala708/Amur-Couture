@@ -25,6 +25,7 @@ const NavbarLogo: React.FC<NavbarLogoProps> = ({
         height={height}
         className="w-auto h-auto object-contain"
         priority
+        unoptimized
       />
     </Link>
   )
